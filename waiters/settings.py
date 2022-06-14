@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Apps
+    'menu',
+    
+    # Packages
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +74,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'waiters.wsgi.application'
+ASGI_APPLICATION = 'waiters.asgi.application'   # For webSocket purpose
 
 
 # Database
